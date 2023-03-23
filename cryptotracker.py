@@ -18,8 +18,7 @@ def get_current_rate():
 def notify_user():
     print(f'Der Kurs hat das Goal von {goal_rate} USD erreicht!')
 
-    wave_object = simpleaudio.WaveObject.from_wave_file(
-        '/home/dci-student/projects/private_project/crypto_tracker/sounds/kaching.wav')
+    wave_object = simpleaudio.WaveObject.from_wave_file('/~your_sound.wav')
     play_object = wave_object.play()
     play_object.wait_done()
 
